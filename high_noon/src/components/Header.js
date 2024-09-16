@@ -36,7 +36,7 @@ const Header = () => {
     <div>
       <div
         style={{
-          border: "solid",
+          // border: "solid",
           display: "flex",
           justifyContent: "space-between",
           padding: "5px 10px",

@@ -4,10 +4,14 @@ import Header from "./components/Header";
 
 
 function App() {
-  return <div>
-    <Header/>
-    <Body/>
-  </div>;
+  return (
+    <div>
+      <div style={{background:"black"}}>
+        <Header/>
+        <Body />
+      </div>
+    </div>
+  );
 }
 
 export default App;
