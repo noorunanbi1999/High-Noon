@@ -2,6 +2,7 @@ import React from "react";
 // import vid from "/src/vid.mp4";
 import Photo1 from "./pics.jpg"
 import vid from "./vid.mp4"
+import { useRef, useEffect } from "react";
 
 const Body = () => {
   const imgURL = "./src/vid.mp4";
@@ -32,7 +33,7 @@ const Body = () => {
         <button style={buttonStyleSignIn}>sign-in</button>
       </div>
 
-      <video src={vid} autoPlay={true} loop={true} height={400} width={600}></video>
+      <video src={vid} autoPlay={true}  loop={true} height={400} width={600} controls></video>
     </div>
   );
 };
