@@ -15,6 +15,7 @@ const Trending = () => {
   ];
   return (
     <div>
+      <h2 style={{color:"white" ,margin:"30px"}}>Trending Topics</h2>
       <div
         style={{
           display:"flex",
@@ -25,12 +26,16 @@ const Trending = () => {
           alignItems: "center",
           justifyContent: "center",
           gap: "13px",
-          padding: "12px",
-          margin: "15px",
+          padding: "20px",
+          margin: "20px",
           borderRadius: "18px",
+          borderBottom:"solid",
+          borderRight:"solid",
+          borderBlockColor:"grey",
           background: "#333333",
         }}
       >
+
         {objArr.map((obj) => (
           <Topic heading={obj.heading} article={obj.article} />
         ))}

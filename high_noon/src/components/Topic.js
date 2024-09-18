@@ -10,10 +10,11 @@ const Topic = ({ heading, article }) => {
     flexDirection: "column",
     justifyItems: "left",
     color: "white",
-    height: "150px",
+    height: "100px",
     width: "300px",
     background: onCard ? "orange" : "grey",
-    padding:"12px"
+    padding: "12px",
+    borderRadius:"12px"
   };
   return (
     <div
