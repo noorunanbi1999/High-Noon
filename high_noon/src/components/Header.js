@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import SignIn from "./SignIn";
+import { Link } from "react-router-dom";
+
 
 const Header = () => {
   const [isHoverd, setIsHovered] = useState(false);
@@ -9,6 +13,12 @@ const Header = () => {
   const handleMouseEnterSearch = () => setIsZoomed(true);
   const handleMouseLeaveSearch = () => setIsZoomed(false);
 
+  const navigate=useNavigate()
+
+  const handleOnClick=()=>{
+    navigate('/signin')
+  }
+
   const buttonStyleSearch = {
     backgroundColor: "black",
     color: "white",
@@ -17,10 +27,9 @@ const Header = () => {
     paddingLeft: "2%",
     paddingRight: "2%",
     height: "24px",
-    width:"100px",
+    width: "100px",
     border: "solid",
     borderBlockColor: "white",
-    
   };
 
   const buttonStyleSignIn = {
@@ -68,6 +77,7 @@ const Header = () => {
             style={buttonStyleSignIn}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            onClick={handleOnClick}
           >
             sign-in
           </button>

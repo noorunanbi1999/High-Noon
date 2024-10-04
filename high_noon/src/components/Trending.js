@@ -8,9 +8,7 @@ const Trending = () => {
     { id: 3, heading: "When", article: "Shit" },
     { id: 4, heading: "Why", article: "Shit" },
     { id: 5, heading: "Where", article: "Shit" },
-    { id: 3, heading: "What", article: "Shit" },
-    { id: 3, heading: "What", article: "Shit" },
-    { id: 3, heading: "What", article: "Shit" },
+    { id: 6, heading: "What", article: "Shit" },
     
   ];
   return (

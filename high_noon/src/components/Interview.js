@@ -1,13 +1,21 @@
-import React from 'react'
+import React from "react";
+import InterviewCarousel from "./InterviewCarousel";
+
+
 
 const Interview = () => {
-    const buttonStyle={
-        color:"white",
-        background:"orange",
-        border:"solid",
-        borderColor:"grey"
+ 
 
-    }
+  const buttonStyle = {
+    color: "orange",
+    background: "black",
+    border: "solid",
+    borderColor: "orange",
+    borderRadius: "22px",
+    height: "24px",
+    width: "100px",
+    marginTop: "50px",
+  };
 
   return (
     <div
@@ -25,13 +33,15 @@ const Interview = () => {
         width: "100%",
         height: "500px",
         overflow: "hidden",
+        border:"solid"
       }}
     >
       <h2>Exclusive Interview</h2>
       <p>This section comprises of famous indivisulas we have interviewed</p>
-      <button style={buttonStyle}>Watch Here</button>
+      {/* <button style={buttonStyle}>Watch Here</button> */}
+      {InterviewCarousel}
     </div>
   );
-}
+};
 
-export default Interview
+export default Interview;

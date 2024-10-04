@@ -1,14 +1,14 @@
 import React from "react";
 // import vid from "/src/vid.mp4";
-import Photo1 from "./pics.jpg"
-import vid from "./vid.mp4"
+import Photo1 from "./pics.jpg";
+import vid from "./vid.mp4";
 import { useRef, useEffect } from "react";
 
 const Body = () => {
   const imgURL = "./src/vid.mp4";
 
   const buttonStyleSignIn = {
-    backgroundColor:"orange",
+    backgroundColor: "orange",
     color: "white",
     border: "none",
     borderRadius: "22px",
@@ -19,10 +19,10 @@ const Body = () => {
     <div //main body div
       style={{
         display: "flex",
-        marginLeft:"100px",
+        marginLeft: "100px",
         alignItems: "center",
         // border: "solid",
-        justifyContent:"space-evenly",
+        justifyContent: "space-evenly",
         background: "black",
         color: "white",
       }}
@@ -33,7 +33,14 @@ const Body = () => {
         <button style={buttonStyleSignIn}>sign-in</button>
       </div>
 
-      <video src={vid} autoPlay={true}  loop={true} height={400} width={600} controls></video>
+      <video
+        src={vid}
+        autoPlay={true}
+        loop={true}
+        height={400}
+        width={600}
+        muted
+      ></video>
     </div>
   );
 };
